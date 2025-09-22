@@ -1,0 +1,16 @@
+Note :
+Creating a stored procedure in MySQL involves defining a set of SQL statements that can be stored in the database and executed later. 
+
+
+
+
+DELIMITER //
+
+CREATE PROCEDURE Displaydatacalc()
+BEGIN
+    SELECT * FROM samplecalculator;
+END //
+
+DELIMITER ;
+
+CALL Displaydatacalc();
